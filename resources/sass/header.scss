@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    width: 80%;
+    margin: auto;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+
+            a {
+                color: black;
+                text-decoration: none;
+                padding-bottom: 40px;
+
+                &:hover {
+                    color: blue;
+                    border-bottom: 5px solid blue;
+                }
+            }
+        }
+    }
+}
