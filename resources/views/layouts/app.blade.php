@@ -9,7 +9,16 @@
 </head>
 
 <body>
+    @include('partials.header')
 
+
+
+
+
+
+
+
+    @include('partials.footer')
 </body>
 
 </html>
