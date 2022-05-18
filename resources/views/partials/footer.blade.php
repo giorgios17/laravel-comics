@@ -58,4 +58,35 @@
             </div>
         </div>
     </section>
+    <?php
+    $dcComics: [
+        "Characters",
+        "Comics",
+        "Movies",
+        "TV",
+        "Games",
+        "Videos",
+        "News",
+      ],
+      //FOOTER NAV SHOP
+      $shop: ["Shop DC", "Shop DC Collectibles"],
+      //FOOTER NAV DC
+      $dc: [
+        "Terms of Use",
+        "Privacy Policy (New)",
+        "Ad Choices",
+        "Advertising",
+        "Jobs",
+        "Subscriptions",
+        "Talent Workshops",
+        "CPSC Certificates",
+        "Ratings",
+        "Shop Help",
+        "Contact Us",
+      ],
+      //FOOTER NAV SITES
+      $sites: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
+
+      ],
+      ?>
 </footer>
