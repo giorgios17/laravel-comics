@@ -6,6 +6,10 @@ header {
     width: 80%;
     margin: auto;
 
+    #logo {
+        width: 50px;
+    }
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -20,8 +24,8 @@ header {
                 padding-bottom: 40px;
 
                 &:hover {
-                    color: blue;
-                    border-bottom: 5px solid blue;
+                    color: #0282f9;
+                    border-bottom: 5px solid #0282f9;
                 }
             }
         }

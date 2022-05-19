@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 Route::get('/fumetti', function () {
 
-    return view('fumetti');
+    return view('partials.fumetti');
 });

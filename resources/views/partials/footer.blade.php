@@ -1,13 +1,35 @@
 <footer>
+    <?php
+    $infolink = [
+        [
+            'name' => 'DIGITAL COMICS',
+        ],
+        [
+            'name' => 'DC MERCHANDISE',
+        ],
+        [
+            'name' => 'SUBSCRIPTION',
+        ],
+        [
+            'name' => 'COMIC SHOP LOCATOR',
+        ],
+        [
+            'name' => 'DC POWER VISA',
+        ],
+    ];
+    $dcComics = ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News'];
+    $shop = ['Shop DC', 'Shop DC Collectibles'];
+    $dc = ['Terms of Use', 'Privacy Policy (New)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us'];
+    $sites = ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa'];
+    ?>
     <!-- shop link -->
     <section class="infolink">
         <div class="container">
-            {{-- <div class="info" :key="index" v-for="(link, index) in infolink">
-                <img :src="link.image" :alt="link.name" />
-                <p>{{ link . name }}</p>
-            </div> --}}
             <div class="info">
-
+                @foreach ($infolink as $link)
+                    {{-- <img src="{{ $link['image'] }}" alt="{{ $link['name'] }}" /> --}}
+                    <p>{{ $link['name'] }}</p>
+                @endforeach
             </div>
         </div>
     </section>
@@ -17,31 +39,39 @@
             <div class="col">
                 <ul>
                     <h3>DC COMICS</h3>
-                    {{-- <li :key="index" v-for="(link, index) in dcComics">
-                        <a href="#">{{ link }}</a>
-                    </li> --}}
+                    <li>
+                        @foreach ($dcComics as $link)
+                            <a href="#">{{ $link }}</a>
+                        @endforeach
+                    </li>
                 </ul>
                 <ul>
                     <h3>SHOP</h3>
-                    {{-- <li :key="index" v-for="(link, index) in shop">
-                        <a href="#">{{ link }}</a>
-                    </li> --}}
+                    <li>
+                        @foreach ($shop as $link)
+                            <a href="#">{{ $link }}</a>
+                        @endforeach
+                    </li>
                 </ul>
             </div>
             <div class="col">
                 <ul>
                     <h3>DC</h3>
-                    {{-- <li :key="index" v-for="(link, index) in dc">
-                        <a href="#">{{ link }}</a>
-                    </li> --}}
+                    <li>
+                        @foreach ($dc as $link)
+                            <a href="#">{{ $link }}</a>
+                        @endforeach
+                    </li>
                 </ul>
             </div>
             <div class="col">
                 <ul>
                     <h3>SITES</h3>
-                    {{-- <li :key="index" v-for="(link, index) in sites">
-                        <a href="#">{{ link }}</a>
-                    </li> --}}
+                    <li>
+                        @foreach ($sites as $link)
+                            <a href="#">{{ $link }}</a>
+                        @endforeach
+                    </li>
                 </ul>
             </div>
         </div>
@@ -58,4 +88,5 @@
             </div>
         </div>
     </section>
+
 </footer>
