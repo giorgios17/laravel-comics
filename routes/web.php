@@ -21,3 +21,6 @@ Route::get('/fumetti', function () {
     $fumetti = config('comics');
     return view('partials.fumetti', ['fumetti'=>$fumetti]);
 });
+Route::get('/productdetails', function () {
+    return view('productdetails');
+});

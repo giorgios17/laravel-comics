@@ -1,0 +1,29 @@
+.current-product {
+    color: white;
+    position: absolute;
+    bottom: -60px;
+    left: 250px;
+    border: 1px solid white;
+}
+
+.band {
+    height: 100px;
+    background-color: #0282f9;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.layout-style {
+    background-color: white;
+    color: black;
+    padding: 50px 0px;
+
+}
+
+.right {
+    text-align: right;
+}
